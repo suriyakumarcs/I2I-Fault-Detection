@@ -1,0 +1,31 @@
+@import "../Utils/Mixins";
+
+.ui-user {
+  .breadcrumb {
+    background-color: $white;
+    margin: 10px 0;
+    .breadcrumb-item {
+      font-size: 24px;
+    }
+  }
+
+  // User Form
+  .ui-user-form {
+    .user-input {
+      margin-bottom: 25px;
+    }
+    .form-label {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .form-input {
+      min-height: 60px;
+    }
+    .form-notification {
+      color: $semi-dark-gray;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+}

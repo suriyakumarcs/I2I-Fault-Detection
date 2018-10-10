@@ -1,0 +1,31 @@
+@import "../Utils/Mixins";
+
+.ui-home {
+  .breadcrumb {
+    background-color: $white;
+    margin: 10px 0;
+    .breadcrumb-item {
+      font-size: 24px;
+    }
+  }
+
+  // Task Form
+  .ui-task-form {
+    .task-input {
+      margin-bottom: 80px;
+    }
+    .form-label {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+    .form-input {
+      min-height: 60px;
+    }
+    .form-notification {
+      color: $semi-dark-gray;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+  }
+}

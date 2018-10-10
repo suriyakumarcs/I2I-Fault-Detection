@@ -1,0 +1,81 @@
+@import "../Utils/Mixins";
+
+.ui-timeline {
+  .timeline {
+    box-shadow: 0 4px 3px 2px $medium-gray;
+    height: calc(100vh - 56px);
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    .submit-button {
+      margin: 0 25px;
+      min-width: calc(100% - 50px);
+      svg {
+        margin-left: 10px;
+      }
+    }
+    li {
+      position: relative;
+      &.flex-task-timeline {
+        min-height: calc(100% - 340px);
+      }
+      &.flex-dashboard-timeline {
+        min-height: calc(100% - 285px);
+      }
+      .empty-timeline {
+        margin: 0;
+        min-height: 75px;
+      }
+    }
+    .timeline-label {
+      display: block;
+      font-weight: 700;
+      margin-top: 10px;
+      padding-right: 100px;
+      position: absolute;
+      text-align: right;
+      width: 25%;
+    }
+    .timeline-icon {
+      background: $white;
+      border-radius: 50%;
+      box-shadow: 0 0px 6px 3px $medium-gray;
+      color: $black;
+      font-size: 1.4em;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      margin: 0 0 0 -22px;
+      width: 40px;
+      svg {
+        width: 20px;
+      }
+    }
+    .timeline-content {
+      border-radius: 5px;
+      color: $black;
+      font-size: 1.2em;
+      font-weight: 300;
+      margin: 0 40px;
+      min-height: 200px;
+      padding: 5px 12px;
+      position: relative;
+      line-height: 1.4;
+      &.minimize {
+        min-height: 145px;
+      }
+      &.user-content {
+        min-height: 171px;
+      }
+      .title {
+        margin: 0;
+      }
+      .content {
+        font-size: 14px;
+      }
+    }
+  }
+}
