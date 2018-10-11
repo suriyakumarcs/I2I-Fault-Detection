@@ -54,28 +54,47 @@ class TaskForm extends Component {
               <form onSubmit={handleSubmit(this.handleFormSubmit)}>
                 <TextField
                   type="text"
-                  name="ChartType"
+                  name="ipaddress"
                   isLabelRequired
-                  htmlFor="chart type"
-                  labelName="Enter chart type"
-                  className="form-control"
+                  htmlFor="IP Address"
+                  labelName="IP Address"
+                  className="form-control input-box"
                   validate={[required]}
+                  placeholder="Enter IP Address"
                 />
-                <div className="my-2">
-                  <span>
-                    is this chart active!?
-                  </span>
-                  <TextField
-                    type="checkbox"
-                    name="isChartActive"
-                    htmlFor="Active or not"
-                    labelName="isChartActive"
-                    className="ml-4 mt-2"
-                    validate={[]}
-                  />
-                </div>
+                <TextField
+                  type="text"
+                  name="macaddress"
+                  isLabelRequired
+                  htmlFor="Mac Address"
+                  labelName="Mac Address"
+                  className="form-control input-box"
+                  validate={[required]}
+                  placeholder="Enter Mac Address"
+                />
+                <TextField
+                  type="text"
+                  name="ram"
+                  isLabelRequired
+                  htmlFor="RAM"
+                  labelName="RAM"
+                  className="form-control input-box"
+                  validate={[required]}
+                  placeholder="Enter RAM"
+                />
+                <TextField
+                  type="text"
+                  name="osversion"
+                  isLabelRequired
+                  htmlFor="OS Version"
+                  labelName="OS Version"
+                  className="form-control input-box"
+                  validate={[required]}
+                  placeholder="Enter OS Version"
+                />               
+                
                 <Col className="p-0" md="6">
-                  <Button color="primary" size="md" block>Add chart type</Button>
+                  <Button color="primary" size="md" block>Generate FP</Button>
                 </Col>
                 {/* <Row>
                   <Col md="12">

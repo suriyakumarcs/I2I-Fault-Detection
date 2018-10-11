@@ -1,18 +1,22 @@
 @import "../Utils/Mixins";
 
 .ui-home {
+  background-color: #f2f5fa;
   .breadcrumb {
-    background-color: $white;
+    background-color: #fff;
     margin: 10px 0;
     .breadcrumb-item {
       font-size: 24px;
     }
   }
-
+  
   // Task Form
   .ui-task-form {
     .task-input {
       margin-bottom: 80px;
+    }
+    .input-box {
+      min-height: 50px;
     }
     .form-label {
       font-size: 18px;

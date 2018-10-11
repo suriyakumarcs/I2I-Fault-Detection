@@ -6,9 +6,7 @@ class Header extends Component {
   render() {
     return (
       <div className="ui-header">
-        <Navbar expand="md">
-          <NavbarBrand href="/">IM</NavbarBrand>
-        </Navbar>
+        Pragmatrix
       </div>
     );
   }

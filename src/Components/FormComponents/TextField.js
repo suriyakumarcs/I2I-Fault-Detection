@@ -17,14 +17,14 @@ const InputBox = ({
   <Fragment>
     <Input
       {...input}
-      className={className}
+      className={className + ' mb-4'}
       type={type}
       placeholder={placeholder}
       onChange={input.onChange}
     />
     {
       error && touched &&
-      <div className="error-message">
+      <div className="error-message mb-4">
         {errorLabel || label} {error}
       </div>
     }

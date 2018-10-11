@@ -9,10 +9,10 @@ class AppContainer extends React.Component {
       <div className="ui-container">
         <Container fluid>
           <Row>
-            <Col className="padding-0" md="12">
+            <Col className="p-0" md="12">
               <Header />
             </Col>
-            <Col md="12">
+            <Col className="p-0" md="12">
               {this.props.children}
             </Col>
           </Row>
