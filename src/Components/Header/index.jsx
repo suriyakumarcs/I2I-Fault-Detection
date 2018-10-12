@@ -10,11 +10,7 @@ import {
   NavbarBrand,
   Nav,
   NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  NavLink } from 'reactstrap';
 
 import "./Header";
 
@@ -41,7 +37,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar expand="md">
+        <Navbar expand="md" className="nav-container">
           <NavbarBrand>
             <img src={logo} className="logo-img" />
           </NavbarBrand>
