@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 import { reduxForm } from 'redux-form';
-import { Button, Col } from "reactstrap";
 
 import { saveChartType } from '../../Action/ChartTypeAction';
 import TextField from '../FormComponents/TextField';
@@ -192,9 +191,9 @@ class TaskForm extends Component {
             />
           </div>      
         </div>
-        <Col className="col-lg-2 offset-lg-5 col-sm-4 col-offset-4 submit-button">
-          <Button color="primary" size="md" block>Generate FP</Button>
-        </Col>
+        <div className="col-lg-2 offset-lg-5 col-sm-4 col-offset-4 submit-button">
+          <button className="btn">Generate FP</button>
+        </div>
       </form>
     )
   }

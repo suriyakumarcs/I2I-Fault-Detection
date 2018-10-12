@@ -43,7 +43,7 @@ class Header extends Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav navbar>
               <NavItem className="c-pointer" onClick={() => { this.changeRoute('/') }}>
                 <NavLink>Devices</NavLink>
               </NavItem>

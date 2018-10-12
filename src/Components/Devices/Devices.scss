@@ -1,0 +1,44 @@
+@import '../../variables';
+
+.device-grid-section {
+    margin: 50px 10%;
+    // background-color: $background-clr;
+    padding: 20px;
+    header {
+        color: white;
+        background-image: linear-gradient(289deg, #f2f5fa, #31ACE2);
+        height: 60px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .add-device {
+            text-align: center;
+            width: 150px;
+            color: #2C7EBC;
+            .fa-plus {
+                padding-right: 10px;
+                cursor: pointer;
+                font-size: 16px;
+                color: red;
+            }
+        }
+    }
+    .table-section {
+        margin-top: 30px;
+        width: 100%;
+        padding: 20px;
+        table {
+            width: 100%;
+            border-radius: 5px;
+            th {
+                border: none;
+            }
+            tbody { // stripped table
+                // tr:nth-child(odd) {  
+                //     background-color: #DCEDF7;
+                // }
+            }
+        }
+    }
+}
