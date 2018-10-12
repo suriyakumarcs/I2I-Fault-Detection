@@ -27,12 +27,6 @@ class Home extends Component {
       <div className="ui-home container-fluid">
         <Row>
           <Col md="12 p-0">
-            <Col md="12 p-0 mb-4 custom-navigation">
-              <Navigation handleSelect={this.handleSelect}
-                activeSection={activeTab}
-                tabHeaderList={this.tabHeaderList}
-              />
-            </Col>
             <Col md="12">
               <TaskForm />
             </Col>

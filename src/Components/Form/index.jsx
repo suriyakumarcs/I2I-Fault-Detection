@@ -7,7 +7,7 @@ import "./Form";
 class Form extends Component {
   render() {
     return (
-      <div className="ui-form">
+      <div className="ui-form container-fluid">
         <Row>
           <Col md="8">
             <Col md="12">

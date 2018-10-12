@@ -41,7 +41,7 @@ class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar color="light" light expand="md">
+        <Navbar expand="md">
           <NavbarBrand>
             <img src={logo} className="logo-img" />
           </NavbarBrand>

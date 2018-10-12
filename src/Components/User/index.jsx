@@ -7,7 +7,7 @@ import "./User";
 class User extends Component {
   render() {
     return (
-      <div className="ui-user">
+      <div className="ui-user container-fluid">
         <Row>
           <Col md="8">
             <Col md="12">
