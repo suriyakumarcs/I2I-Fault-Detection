@@ -1,5 +1,24 @@
 @import "../Utils/Mixins";
+@import '../../variables';
 
-.logo-img {
-  height: 55px;
+
+.nav-container {
+  background-color: $white;
+  color: $label-clr;
+  font-size: 14px;
+  font-weight: 600;
+  height: 70px;
+  padding: 15px 0 0 0 !important;
+  .logo-img {
+    height: 55px;
+    padding-left: 20px;
+  }
+  .navbar-nav {
+    .active > .nav-link, .nav-link:focus, .nav-link:hover, .nav-link:active {
+        border-bottom: 3px solid #31ACE2;
+    }
+    .nav-link {
+        padding: 20px !important;
+    }
+}
 }

@@ -1,4 +1,5 @@
 @import "../Utils/Mixins";
+@import "../../variables";
 
 .ui-home {
   background-color: #f2f5fa;
@@ -9,27 +10,18 @@
       font-size: 24px;
     }
   }
-  
-  // Task Form
-  .ui-task-form {
-    .task-input {
-      margin-bottom: 80px;
-    }
-    .input-box {
-      min-height: 50px;
-    }
-    .form-label {
-      font-size: 18px;
-      font-weight: 500;
-      margin-bottom: 5px;
-    }
-    .form-input {
-      min-height: 60px;
-    }
-    .form-notification {
-      color: $semi-dark-gray;
-      font-size: 14px;
-      margin-bottom: 8px;
+}
+
+.form-container {
+  background-color: $background-clr;
+  margin: 50px 10%;
+  padding-top: 50px;
+  border-radius: 5px;
+  form {
+    padding: 20px;
+    padding-bottom: 30px;
+    .submit-button {
+      margin-top: 20px;
     }
   }
 }

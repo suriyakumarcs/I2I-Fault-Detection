@@ -17,14 +17,14 @@ const InputBox = ({
   <Fragment>
     <Input
       {...input}
-      className={className + ' mb-4'}
+      className={className}
       type={type}
       placeholder={placeholder}
       onChange={input.onChange}
     />
     {
       error && touched &&
-      <div className="error-message mb-4">
+      <div className="error-message">
         {errorLabel || label} {error}
       </div>
     }
@@ -44,11 +44,11 @@ const TextField = ({
   handleChange,
 
 }) => (
-  <Fragment>
+  <div className="text-field">
     {
       isLabelRequired &&
       <div className="input-field">
-        <label htmlFor={htmlFor}>{labelName}</label>
+        <label htmlFor={htmlFor} className="label">{labelName}</label>
         {
           validate.map(field => (
             field.name === 'required' && <span className="required-field" key={field.name}>*</span>
@@ -70,7 +70,7 @@ const TextField = ({
         onChange={handleChange}
       />
     }
-  </Fragment>
+  </div>
 );
 
 TextField.propTypes = {

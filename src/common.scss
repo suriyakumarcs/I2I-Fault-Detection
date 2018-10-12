@@ -1,9 +1,28 @@
 /*******************
   Helper Styles
 *******************/
+@import './variables.scss';
+
+body {
+  font-family: "Source Sans Pro Semibold";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .error-message {
-  margin-top: 10px;
-	color: #f44336;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  color: $danger-clr;
+  font-size: 14px;
+}
+
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
 }
 
 .padding-0 {
@@ -15,4 +34,51 @@
 
 .c-pointer {
   cursor: pointer;
+}
+
+.nav-item {
+  a {
+    padding: 20px;
+    &:hover, &:active {
+      border-bottom: 2px solid blue;
+    }
+  }
+}
+
+input[type="text"] {
+  height: 42px;
+  background-color: $white-clr;
+  border-radius: 5px;
+  padding-right: 5px;
+  color: $text-clr;
+  border: none;
+  outline: none !important;
+  margin-top: 5px;
+  &::placeholder {
+    color: $text-clr;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.label {
+  color: #9e9e9e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.required-field {
+  padding-left: 5px;
+  color: $danger-clr;
+}
+
+button {
+  height: 42px;
+  border-radius: 4px;
+  color: $white-clr;
+}
+
+.text-field {
+  height: 120px;
 }

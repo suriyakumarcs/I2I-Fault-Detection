@@ -1,0 +1,8 @@
+.navbar-nav {
+    .active > .nav-link, .nav-link:focus, .nav-link:hover {
+        border-bottom: 2px solid #31ACE2;
+    }
+    .nav-link {
+        padding: 20px;
+    }
+}
