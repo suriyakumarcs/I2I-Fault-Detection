@@ -2,6 +2,7 @@
 
 
 import React, { Component } from 'react';
+import { withRouter } from 'react-router-dom';
 import {
   Collapse,
   Navbar,
@@ -17,7 +18,7 @@ import {
 
 import "./Header";
 
-import logo from '../../../assets/logo.png';
+import logo from '../../assets/logo.png';
   
 class Header extends Component {
   constructor(props) {
@@ -32,6 +33,11 @@ class Header extends Component {
       isOpen: !this.state.isOpen
     });
   }
+
+  changeRoute = route => {
+    this.props.history.push(route);
+  };
+  
   render() {
     return (
       <div>
@@ -42,13 +48,13 @@ class Header extends Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              <NavItem className="c-pointer" onClick={() => { this.changeRoute('/') }}>
                 <NavLink>Devices</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="c-pointer" onClick={() => { this.changeRoute('/form') }}>
                 <NavLink>Discovered Devices</NavLink>
               </NavItem>
-              <NavItem>
+              <NavItem className="c-pointer" onClick={() => { this.changeRoute('/user') }}>
                 <NavLink>Undiscovered Devices</NavLink>
               </NavItem>
             </Nav>
@@ -59,4 +65,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default withRouter(Header);
